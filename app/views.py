@@ -67,6 +67,10 @@ def submit_textarea():
 
     return redirect('/')
 
+@app.route('/Description')
+def description():
+    return render_template('Description.html', title='How to use MessageNet')
+
 
 def timestamp_to_string(epoch_time):
     return datetime.datetime.fromtimestamp(epoch_time).strftime('%H:%M')

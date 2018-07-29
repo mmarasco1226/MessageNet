@@ -262,4 +262,4 @@ def announce_new_block(block):
         requests.post(url, data=json.dumps(block.__dict__, sort_keys=True))
 
 
-app.run(debug=True, port=8000)
+app.run(host='0.0.0.0', port=8000)
